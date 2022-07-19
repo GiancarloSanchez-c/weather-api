@@ -34,4 +34,4 @@ const searchCity = async (ciudad, units = "metric") => {
 
 }
 
-module.exports = { searchCity }
+module.exports = searchCity 
