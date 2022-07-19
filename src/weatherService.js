@@ -1,8 +1,6 @@
 const axios = require("axios");
-const { API_KEY } = require('./api')
-//Creas una cuenta en OPEN WEATHER MAP - 'https://openweathermap.org/api/'
-// Si ya tienes una cuenta - ingresas a la cuenta y obtienes un API KEY
-// y reemplazas la API_KEY por la que tienes.
+const API_KEY  = '383d75b87ed7abe5dcbb8943b4d49fef'
+
 
 const makeIconURL = (iconId) =>
   `https://openweathermap.org/img/wn/${iconId}@2x.png`;
