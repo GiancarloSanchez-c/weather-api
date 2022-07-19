@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "../assets/css/Home.css";
 import hotBg from "../assets/hot.jpg";
 import coldBg from "../assets/cold.jpg";
-import  searchCity  from "../weatherService";
+import  {searchCity}  from "../weatherService";
 import Card from "./Card";
 
 const Home = () => {
