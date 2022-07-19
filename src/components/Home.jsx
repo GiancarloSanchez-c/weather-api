@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import '../assets/css/Home.css';
+import "../assets/css/Home.css";
 import hotBg from "../assets/hot.jpg";
 import coldBg from "../assets/cold.jpg";
 import { searchCity } from "../weatherService";
@@ -44,12 +44,17 @@ const Home = () => {
   };
 
   return (
-    <div className="home" style={{backgroundImage: `url(${bg})`}}>
+    <div className="home" style={{ backgroundImage: `url(${bg})` }}>
       <div className="overlay">
         {weather && (
-          <div className="container" >
+          <div className="container">
             <div className="section section__input">
-              <input onKeyDown={enterKeyPressed} type="text" name={city} placeholder="Enter City" />
+              <input
+                onKeyDown={enterKeyPressed}
+                type="text"
+                name={city}
+                placeholder="Enter City"
+              />
               <button onClick={(e) => handleUnitsClick(e)}>Search</button>
             </div>
 
@@ -60,7 +65,9 @@ const Home = () => {
                 <h3>{weather.description}</h3>
               </div>
               <div className="temperature">
-                <h1>{`${weather.temp.toFixed()} °${units === "metric" ? "C" : "F"}  `}</h1>
+                <h1>{`${weather.temp.toFixed()} °${
+                  units === "metric" ? "C" : "F"
+                }  `}</h1>
               </div>
             </div>
             <Card weather={weather} units={units} />
